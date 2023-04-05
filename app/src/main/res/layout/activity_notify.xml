@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".Primary.Notify"
+    android:background="@drawable/br1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/thanh_thanh"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="Thông báo"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hiện tại bạn chưa có thông báo nào"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:id="@+id/tv_nothing"
+        android:layout_marginTop="30dp"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_notification"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Nhận thông báo"
+        android:id="@+id/btn_Notify"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/thanh_thanh" />
+
+
+    <include layout="@layout/___bottom_nav___" android:id="@+id/bottom_navigation"/>
+
+</LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/station"
+    tools:context=".Primary.Relax">
+
+
+    <TextView
+        android:id="@+id/tvRPS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/circle_grad"
+        android:gravity="center"
+        android:text="Play With Bot"
+        android:textColor="@color/white"
+        android:textSize="35dp" />
+
+
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:id="@+id/ivCurrent"
+        android:layout_width="wrap_content"
+        android:layout_height="170dp"
+        android:layout_below="@+id/tvRPS"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/scissor" />
+
+    <TextView
+        android:id="@+id/tvHuman"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Your Choice"
+        android:gravity="center"
+        android:layout_below="@+id/ivCurrent"
+        android:background="@drawable/et_bg"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/ivComputer"
+        android:layout_width="wrap_content"
+        android:layout_height="170dp"
+        android:layout_below="@+id/tvHuman"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/stone" />
+
+    <TextView
+        android:id="@+id/tvComputer"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_below="@+id/ivComputer"
+        android:text="Computer Choice"
+        android:textColor="#ffffff"
+        android:background="@drawable/et_bg"
+        android:textSize="20dp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Score: Human-> 0  Computer-> 0"
+        android:layout_below="@+id/tvComputer"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="520dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bRock"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/btn_bg"
+            android:fontFamily="sans-serif-medium"
+            android:text="ROCK"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/bPaper"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/btn_bg"
+            android:fontFamily="sans-serif-medium"
+            android:text="Paper"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/bScissor"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/btn_bg"
+            android:backgroundTint="@color/teal_700"
+            android:fontFamily="sans-serif-medium"
+            android:text="Scissor"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

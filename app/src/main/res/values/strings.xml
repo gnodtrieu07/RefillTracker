@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">RefillTracker</string>
+    <string name="title_activity_map">Map</string>
+    <string name="google_map_key">AIzaSyD1jzZs3EBt4dtL6HaKlMVq-6vFlBrZys4</string>
+    <string name="title_activity_history">History</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <string name="facebook_app_id">413433487231521</string>
+    <string name="fb_login_protocol_scheme">fb413433487231521</string>
+
+
+    <array name="typecar">
+        <item>Mercedes</item>
+        <item>BMW</item>
+        <item>RangeRove</item>
+        <item>Camry</item>
+    </array>
+</resources>

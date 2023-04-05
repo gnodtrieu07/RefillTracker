@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:gravity="center_vertical"
+    android:background="#CFCDCD"
+    android:id="@+id/layoutNear"
+    android:layout_marginBottom="10dp">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/img_type"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Đổ xăng"
+        android:textSize="18sp"
+        android:id="@+id/tv_history_title"
+        android:textColor="#F44336"
+        android:layout_marginLeft="5dp"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/bg_secondary"
+        android:layout_marginVertical="5dp"
+        android:layout_marginHorizontal="10dp"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Giờ"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:id="@+id/tv_history_time"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="Ngày"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:id="@+id/tv_history_date"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg_secondary"
+            android:layout_marginVertical="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Nơi"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:id="@+id/tv_history_place"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/bg_secondary"
+        android:layout_marginVertical="5dp"
+        android:layout_marginHorizontal="10dp"/>
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Tiền"
+        android:textSize="16sp"
+        android:id="@+id/tv_history_price"
+        android:textColor="#F44336"/>
+
+</LinearLayout>
